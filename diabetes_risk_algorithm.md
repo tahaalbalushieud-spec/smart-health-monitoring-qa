@@ -40,8 +40,9 @@ FOR each user from 1 to numberOfUsers DO
         riskScore = riskScore + 1
     ENDIF
 
-    IF riskScore >= 6 THEN
-        riskLevel = "High"
+IF riskScore >= 7 THEN
+    riskLevel = "High"
+
     ELSE IF riskScore >= 3 THEN
         riskLevel = "Medium"
     ELSE
