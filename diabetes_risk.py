@@ -28,12 +28,12 @@ def diabetes_risk(age, bmi, glucose, family_history):
         return "LOW"
 
 
-# Test cases (قبل التصحيح)
+# Test cases
 tests = [
     (30, 22, 90, 0, "LOW"),
     (50, 31, 130, 1, "HIGH"),
     (45, 25, 100, 0, "MEDIUM"),
-    (-1, 25, 100, 0, "INVALID")   # حالة خاطئة
+    (-1, 25, 100, 0, "INVALID")
 ]
 
 defects = 0
