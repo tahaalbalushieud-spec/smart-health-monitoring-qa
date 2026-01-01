@@ -12,6 +12,8 @@ START
 INPUT numberOfUsers
 
 FOR each user from 1 to numberOfUsers DO
+    DISPLAY "Processing user record"
+
 
     INPUT age
     INPUT BMI
@@ -39,8 +41,6 @@ FOR each user from 1 to numberOfUsers DO
     IF familyHistory == 1 THEN
         riskScore = riskScore + 1
     ENDIF
-DISPLAY "Processing user data"
-
     IF riskScore >= 6 THEN
         riskLevel = "High"
     ELSE IF riskScore >= 3 THEN
